@@ -1,2 +1,0 @@
-# JavaCoreTech
-JavaLearning
