@@ -46,8 +46,9 @@ class Plane implements Movable
 
 class Train implements Movable
 {
-
-    public void run() {
-        System.out.println("Train Runs");
+    public void run()
+    {
+        System.out.println("train run");
     }
 }
+
