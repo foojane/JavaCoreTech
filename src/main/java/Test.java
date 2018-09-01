@@ -1,10 +1,11 @@
 public class Test
 {
-    public static void main(String[] args) {
-        Size s = Size.MEDIUM;
-        System.out.println(Size.EXTRA_LARGE);
-        System.out.println(s.toString());
+    public static void main(String[] args)
+    {
+        Movable m = new Car();
+        ((Car) m).fix();
     }
+
 }
 
 enum Size
@@ -13,4 +14,24 @@ enum Size
     MEDIUM,
     LARGE,
     EXTRA_LARGE
+}
+
+interface Movable
+{
+    void run();
+}
+
+class Car implements Movable
+{
+
+    public void run()
+    {
+        System.out.println("run");
+    }
+
+    public void fix()
+    {
+        System.out.println("fix");
+    }
+
 }
