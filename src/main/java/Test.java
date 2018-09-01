@@ -35,3 +35,11 @@ class Car implements Movable
     }
 
 }
+
+class Plane implements Movable
+{
+    public void run()
+    {
+        System.out.println("fly");
+    }
+}
